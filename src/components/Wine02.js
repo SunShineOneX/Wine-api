@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import axios from "axios";
-
- class Wine02 extends Component {
-    import React, { Component } from "react";
-import axios from "axios";
 const api_call = "http://myapi-profstream.herokuapp.com/api/ff9219/wines";
 
-class Wine01 extends Component {
+ class Wine02 extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -36,15 +33,16 @@ class Wine01 extends Component {
           <div class="container">
             <div class="card">
               <div class="col-lg">
-                <h3>{this.state.baseInfo.name}</h3>
-                <img src={(this.state.baseInfo.picture)} />
-                <h6>ID: {this.state.baseInfo.id}</h6>
-                <h6>{this.state.baseInfo.year}</h6>
-                <h6>{this.state.baseInfo.grapes}</h6>  
-                <h6>{this.state.baseInfo.country}</h6>  
-                <h6>{this.state.baseInfo.region}</h6>  
-                <h6>{this.state.baseInfo.description}</h6>  
-                <h6>{this.state.baseInfo.price}</h6>  
+              <h3>{this.state.baseInfo.name}</h3>
+                    <img src={(this.state.baseInfo.picture)} />
+                    <h6>ID: {this.state.baseInfo.id}</h6>
+                    <h6>From {this.state.baseInfo.year}</h6>
+                    <h6>Made from {this.state.baseInfo.grapes} grapes</h6>  
+                    <h6>from {this.state.baseInfo.country}</h6>  
+                    <h6>in {this.state.baseInfo.region}</h6>  
+                    <h6>{this.state.baseInfo.description}</h6>  
+                    <h6>${this.state.baseInfo.price}</h6>
+                    <button>Buy now!</button>    
 
               </div>
             </div>
@@ -53,8 +51,5 @@ class Wine01 extends Component {
     )
     }
 }
-
-export default Wine01;
-
 
 export default Wine02;
