@@ -8,7 +8,6 @@ const api_call = "http://myapi-profstream.herokuapp.com/api/ff9219/wines";
     super(props);
     this.state = {
       baseInfo: [],
-      id: [],
     };
   }
 

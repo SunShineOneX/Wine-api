@@ -8,14 +8,13 @@ class Wine03 extends Component {
         super(props);
         this.state = {
           baseInfo: [],
-          id: [],
         };
       }
     
       async getWineInfo() {
         try {
           const res = await axios.get(api_call);
-          this.setState({ baseInfo: res.data[1] });
+          this.setState({ baseInfo: res.data[2] });
     
           
         } catch {

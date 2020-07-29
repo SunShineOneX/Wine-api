@@ -7,7 +7,6 @@ class Wine01 extends Component {
     super(props);
     this.state = {
       baseInfo: [],
-      id: [],
     };
   }
 
