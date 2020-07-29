@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import axios from "axios";
+const api_call = "http://myapi-profstream.herokuapp.com/api/ff9219/wines";
 
  class Wine08 extends Component {
-    r  constructor(props) {
+      constructor(props) {
         super(props);
         this.state = {
           baseInfo: [],

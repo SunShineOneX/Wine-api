@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from "axios";
+const api_call = "http://myapi-profstream.herokuapp.com/api/ff9219/wines";
 
  class Wine07 extends Component {
     constructor(props) {
