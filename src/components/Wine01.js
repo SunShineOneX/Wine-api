@@ -15,7 +15,7 @@ class Wine01 extends Component {
     try {
       const res = await axios.get(api_call);
       this.setState({ baseInfo: res.data[0] });
-      this.setState({ id: this.state.baseInfo.id});
+
       
     } catch {
       console.log("error!!!!");
@@ -29,10 +29,22 @@ class Wine01 extends Component {
     return (
     
         <div>
-            <h1>Hello world!!!!!!</h1>
-            <h1>{this.state.baseInfo.id}</h1>
-            <h2>{this.state.baseInfo.name}</h2>
-            <h2>{this.state.baseInfo.year}</h2>
+          <div class="container">
+            <div class="card">
+              <div class="col-lg">
+                <h3>{this.state.baseInfo.name}</h3>
+                <img src={(this.state.baseInfo.picture)} />
+                <h6>ID: {this.state.baseInfo.id}</h6>
+                <h6>{this.state.baseInfo.year}</h6>
+                <h6>{this.state.baseInfo.grapes}</h6>  
+                <h6>{this.state.baseInfo.country}</h6>  
+                <h6>{this.state.baseInfo.region}</h6>  
+                <h6>{this.state.baseInfo.description}</h6>  
+                <h6>{this.state.baseInfo.price}</h6>  
+
+              </div>
+            </div>
+          </div>
         </div>
     )
     }
