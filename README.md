@@ -1,3 +1,6 @@
+# Wine Finder
+## Browse our most popular brands, all in one place.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
